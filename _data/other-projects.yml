@@ -1,7 +1,7 @@
-- name: Masjid in Brunei
+- name: Analysis of Religious Infrastructure in Brunei Darussalam.
   url: https://bruneiverse.github.io/bruneimap/articles/masjid.html
   code: https://bruneiverse.github.io/bruneimap/articles/masjid.html
-  description: Analysis of Religious Infrastructure in Brunei Darussalam.
+  description: A vignette for the bruneimap package, which provides a comprehensive analysis of religious infrastructure in Brunei Darussalam.
   used:
     - thing: Data Analysis
     - thing: R
