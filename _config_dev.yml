@@ -1,26 +1,22 @@
 # Site settings
-name: Brittany Chiang
-title: Brittany Chiang | Front End Software Engineer
-description: Design-minded front-end software engineer focused on building beautiful interfaces and experiences
-url: https://bchiang7.github.io/
+name: Hafeezul Raziq
+title: Hafeezul Raziq | Data Enthusiast
+description: Data-driven analyst with a strong foundation in mathematics, passionate about leveraging data science and analytics to uncover insights and drive impactful decisions
+url: https://hafeezulrzq.github.io/
 baseurl: ''
-email: brittany.chiang@gmail.com
+email: hafeezul.rzq@gmail.com
 cover: https://bchiang7.github.io/img/og.png
 logo: https://bchiang7.github.io/img/emojis/technologist.png
 resume: https://bchiang7.github.io/resume.pdf
 social:
   - title: email
-    url: mailto:brittany.chiang@gmail.com
-  - title: twitter
-    url: https://twitter.com/bchiang7
+    url: mailto:hafeezul.rzq@gmail.com
   - title: instagram
-    url: https://instagram.com/bchiang7
-  - title: codepen
-    url: http://codepen.io/bchiang7
+    url: https://instagram.com/hafeezulrzq
   - title: github
-    url: https://github.com/bchiang7
+    url: https://github.com/hafeezulrzq
   - title: linkedin
-    url: https://www.linkedin.com/in/bchiang7
+    url: https://www.linkedin.com/in/hafeezul-raziq/
 
 # Build settings
 markdown: kramdown
