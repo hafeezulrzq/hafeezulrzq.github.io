@@ -3,7 +3,6 @@ languages:
   - item: SQL
   - item: Python
   - item: Matlab
-  - item: TypeScript
   - item: HTML
   - item: CSS
   - item: JavaScript
