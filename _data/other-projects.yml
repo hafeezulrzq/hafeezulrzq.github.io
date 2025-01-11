@@ -1,8 +1,22 @@
-- name: Analysis of Religious Infrastructure in Brunei Darussalam.
+- name: Analysis of Religious Infrastructure in Brunei Darussalam
   url: https://bruneiverse.github.io/bruneimap/articles/masjid.html
   code: https://bruneiverse.github.io/bruneimap/articles/masjid.html
   description: A vignette for the bruneimap package, which provides a comprehensive analysis of religious infrastructure in Brunei Darussalam.
   used:
-    - thing: Data Analysis
-    - thing: R
+    - thing: Spatial Analysis
     - thing: bruneimap
+    - thing: R
+
+
+- name: Spatio-temporal Analysis of Advertised House Prices in Brunei Darussalam
+  description: A research study on the patterns and trends of house prices in Brunei over time, utilizing spatial and temporal data analysis techniques.
+  used:
+    - thing: Spatio-temporal Modelling
+    - thing: Brunei House Prices
+    - thing: R
+
+- name: Survival Analysis of Atlantic Halibut Fish
+  description: A mini research project on the survival rates and patterns of Atlantic Halibut fish, using various data analysis techniques.
+  used:
+    - thing: Survival Analysis
+    - thing: R
