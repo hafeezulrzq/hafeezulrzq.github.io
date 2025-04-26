@@ -64,7 +64,7 @@ link = "https://doi.org/10.1016/j.dib.2025.111505"
 
 [[params.projects]]
 title = "Spatio-temporal Modelling of Advertised House Prices in Brunei Darussalam (2006-2017)"
-description = "At vero eos et accusamus et iusto odio dignissimos ducimus."
+description = "My BSc Mathematics Research Project in Universiti Brunei Darussalam under the supervision of Dr. Haziq Jamil."
 tech = "R Programming, Statistical Modelling, Data Science"
 image = "/images/projects/spatio-temporal-modelling.jpg"
 link = "#"
