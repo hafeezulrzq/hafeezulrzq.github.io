@@ -16,7 +16,7 @@ canonifyURLs = true
 name = "Hafeezul Raziq"
 location = "Brunei🇧🇳"
 description = "Data Enthusiast. Developer. Tech Community, GDG Brunei & Brunei R User Group. R, Python & SQL. CTF for fun."
-profile_image = "/images/profile.jpg"
+profile_image = "themes/hugo-noir/images/profile.png"
 discord = "johndoe123"
 github = "https://github.com/hafeezulrzq"
 github_username = "hafeezulrzq"
@@ -47,7 +47,7 @@ url = "https://example.com/cert-gcp"
 company = "everBetter Innovations"
 role = "Product Development"
 period = "Nov 2024 - Current"
-logo = "/images/company/eb.png"
+logo = "themes/hugo-noir/images/company/eb.png"
 description = "Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore."
 responsibilities = [
     "Dev support, QA, Testing",
