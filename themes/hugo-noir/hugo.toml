@@ -27,12 +27,6 @@ medium = "https://www.medium.com/@johndoe123"
 linkedin = "https://www.linkedin.com/in/hafeezul-raziq"
 linkedin_username = "Hafeezul Raziq"
 instagram = "https://instagram.com/hafeezulrzq"
-leetcode = "https://leetcode.com/johndoe123"
-leetcode_username = "johndoe123"
-monkeytype = "https://monkeytype.com/profile/johndoe123"
-monkeytype_username = "johndoe123"
-kaggle = "https://www.kaggle.com/johndoe123"
-kaggle_username = "johndoe123"
 
 [[params.honors]]
 institution = "PMUBD"
