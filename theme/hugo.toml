@@ -1,0 +1,132 @@
+baseURL = "https://hafeezulrzq.github.io"
+languageCode = 'en-us'
+title = 'Hafeezul Raziq'
+theme = 'hugo-noir'
+
+# URL handling
+relativeURLs = true
+canonifyURLs = true
+
+# Taxonomy configuration
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+name = "Hafeezul Raziq"
+location = "Brunei🇧🇳"
+description = "Data Enthusiast. Developer. Tech Community, GDG Brunei & Brunei R User Group. R, Python & SQL. CTF for fun."
+profile_image = "/images/profile.jpg"
+discord = "johndoe123"
+github = "https://github.com/hafeezulrzq"
+github_username = "hafeezulrzq"
+email = "hafeezul.rzq@gmail.com"
+twitter = "https://www.twitter.com/johndoe123"
+twitter_username = "johndoe123"
+medium = "https://www.medium.com/@johndoe123"
+linkedin = "https://www.linkedin.com/in/hafeezul-raziq"
+linkedin_username = "Hafeezul Raziq"
+instagram = "https://instagram.com/hafeezulrzq"
+leetcode = "https://leetcode.com/johndoe123"
+leetcode_username = "johndoe123"
+monkeytype = "https://monkeytype.com/profile/johndoe123"
+monkeytype_username = "johndoe123"
+kaggle = "https://www.kaggle.com/johndoe123"
+kaggle_username = "johndoe123"
+
+[[params.honors]]
+institution = "PMUBD"
+title = "Excellence Student Representative Council Award"
+date = "2024"
+
+[[params.certifications]]
+title = "Cisco Introduction to Cybersecurity"
+date = "Apr 2025"
+url = "https://example.com/cert-azure"
+
+[[params.certifications]]
+title = "Udemy SQL Bootcamp"
+date = "Nov 2024" 
+url = "https://example.com/cert-gcp"
+
+[[params.experience]]
+company = "everBetter Innovations"
+role = "Product Development"
+period = "Nov 2024 - Current"
+logo = "/images/company/eb.png"
+description = "Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore."
+responsibilities = [
+    "Dev support, QA, Testing",
+    "Research",
+    "Web development"
+]
+
+[[params.projects]]
+title = "From archives to AI: Residential property data across three decades in Brunei Darussalam"
+description = "Contribute to the data collection for a data article on house prices in Brunei Darussalam"
+tech = "Data collection"
+image = "/images/projects/consectetur.png"
+link = "https://github.com/loremipsum/consectetur"
+
+[[params.projects]]
+title = "Spatio-temporal Modelling of Advertised House Prices in Brunei Darussalam"
+description = "At vero eos et accusamus et iusto odio dignissimos ducimus."
+tech = "R Programming, Statistical Modelling, Data Science"
+image = "/images/projects/consectetur.png"
+link = "https://github.com/loremipsum/consectetur"
+
+[[params.blogs]]
+title = "Code Meets Culture: Analyzing Hari Raya Music with Youtube API in R"
+date = "2025-04-18"
+summary = "At vero eos et accusamus et iusto odio dignissimos ducimus."
+tags = ["R Programming", "Web API", "Data Analysis"]
+content = """
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis...
+"""
+link = "https://medium.com/@loremipsum/future-dolor"
+
+[[params.blogs]]
+title = "Analysis of Religious Infrastructure in Brunei Darussalam"
+date = "2024-12-26"
+summary = "A vignette for the bruneimap package, which provides a comprehensive analysis of religious infrastructure in Brunei Darussalam."
+tags = ["R Programming", "Spatial Analysis"]
+content = """
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit...
+"""
+link = "https://medium.com/@loremipsum/lorem-systems"
+
+
+[[params.voluntary]]
+role = "Head of Logistics"
+organization = "Brunei R User Group"
+period = "2024 - Present"
+description = "We are a community for people interested in Computer Software with a focus on R. R is a programming language for statistical computing and data visualization that has been adopted in the fields of data mining, bioinformatics, and data analysis. The purpose of this group is to connect with other R enthusiasts, exchange ideas, learn new techniques, and collaborate on exciting projects. Whether you are a seasoned IT professional or just starting your coding journey, this group provides a friendly environment to explore the diverse capabilities of R with engaging discussions, insightful presentations, and empowering networking opportunities."
+
+
+[[params.voluntary]]
+role = "Committee Member"
+organization = "Google Developers Group Brunei"
+period = "2022 - Present"
+description = "Google Developers Group (GDG) Brunei is a community of developers who are passionate about learning, sharing knowledge, and building solutions using Google technologies and beyond. As a committee member, I contribute to organizing events, workshops, and meetups that foster growth, innovation, and collaboration among tech enthusiasts. Our goal is to create an inclusive environment where developers of all backgrounds can connect, stay updated with the latest in tech, and advance their skills through hands-on sessions, talks, and community-driven initiatives."
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 1
+  [[menu.main]]
+    name = "Experience"
+    url = "/experience/"
+    weight = 2
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 3
+  [[menu.main]]
+    name = "Blogs"
+    url = "/blogs/"
+    weight = 4
+  [[menu.main]]
+    name = "Contact Me"
+    url = "/contact/"
+    weight = 5
