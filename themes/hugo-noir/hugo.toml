@@ -15,18 +15,49 @@ canonifyURLs = true
 [params]
 name = "Hafeezul Raziq"
 location = "Brunei🇧🇳"
-description = "Data Enthusiast. Developer. Tech Community, GDG Brunei & Brunei R User Group. R, Python & SQL. CTF for fun."
+description = "Data Enthusiast. Developer. Tech Community. R, Python & SQL. CTF for fun."
 profile_image = "/images/profile.png"
 discord = "johndoe123"
 github = "https://github.com/hafeezulrzq"
 github_username = "hafeezulrzq"
 email = "hafeezul.rzq@gmail.com"
-twitter = "https://www.twitter.com/johndoe123"
-twitter_username = "johndoe123"
-medium = "https://www.medium.com/@johndoe123"
 linkedin = "https://www.linkedin.com/in/hafeezul-raziq"
 linkedin_username = "Hafeezul Raziq"
 instagram = "https://instagram.com/hafeezulrzq"
+
+[[params.experience]]
+company = "everBetter Innovations"
+role = "Product Development"
+period = "Nov 2024 - Current"
+logo = "/images/company/eb.png"
+description = "Providing development support, quality assurance, testing, research and web development"
+responsibilities = [
+    "• Act as development support for EverBetter’s core SaaS products: the Student Management System and KPI Dashboard Tracker",
+    "• Oversee and manage website development projects from planning to deployment, ensuring timely delivery and client satisfaction."
+]
+
+[[params.experience]]
+company = "Progresif"
+role = "Marketing/Creative Intern"
+period = "Jul 2022 - Nov 2022"
+logo = "/images/company/eb.png"
+description = "Assist with marketing initiatives, productions and deliverables."
+responsibilities = [
+    "• Collaborated with copywriters and the creative lead to produce final designs, worked with different stakeholders for internal communication, and assisted in video productions",
+    "• Served as the main designer for Progresif’s 2023 Calendar, talent for Progresif’s unboxing videos, designer of Progresif Media’s 2nd Anniversary Logo, and creator of Progresif’s first Instagram filter for ‘It’s YO! Day.’"
+]
+
+[[params.experience]]
+company = "Curious Mind"
+role = "IT & Media Intern"
+period = "Jul 2022 - Nov 2022"
+logo = "/images/company/eb.png"
+description = "Provided technology and media support for event such as BIBD SME360"
+responsibilities = [
+    "• Provided technology and design support, managed experience and website activities, conducted research and planning, and assisted in video production.",
+    "• Involved in conducting the BIBD SME 360 Series Forum and the BIBD Youth Empowerment Summit 2021, assisted in the UBD Executive Development Program, and handled design coordination for the BIBD YES! 2021 Program Book."
+]
+
 
 [[params.honors]]
 institution = "PMUBD"
@@ -36,24 +67,54 @@ date = "2024"
 [[params.certifications]]
 title = "Cisco Introduction to Cybersecurity"
 date = "Apr 2025"
-url = "https://example.com/cert-azure"
+url = "https://www.credly.com/badges/a3fce132-d6ac-4c07-a679-03e0154b8c79/public_url"
 
 [[params.certifications]]
 title = "Udemy SQL Bootcamp"
 date = "Nov 2024" 
-url = "https://example.com/cert-gcp"
+url = "#"
 
-[[params.experience]]
-company = "everBetter Innovations"
-role = "Product Development"
-period = "Nov 2024 - Current"
-logo = "/images/company/eb.png"
-description = "Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore."
-responsibilities = [
-    "Dev support, QA, Testing",
-    "Research",
-    "Web development"
-]
+[[params.certifications]]
+title = "IBM Excel Basics for Data Analysis"
+date = "Jul 2024" 
+url = "https://www.coursera.org/account/accomplishments/verify/3FNYB6RC394G"
+
+[[params.voluntary]]
+role = "Head of Logistics"
+organization = "Brunei R User Group"
+period = "2024 - Present"
+description = "We are a community for people interested in Computer Software with a focus on R. R is a programming language for statistical computing and data visualization that has been adopted in the fields of data mining, bioinformatics, and data analysis. The purpose of this group is to connect with other R enthusiasts, exchange ideas, learn new techniques, and collaborate on exciting projects. Whether you are a seasoned IT professional or just starting your coding journey, this group provides a friendly environment to explore the diverse capabilities of R with engaging discussions, insightful presentations, and empowering networking opportunities."
+link = "https://bruneir.github.io/"
+
+
+[[params.voluntary]]
+role = "Committee Member"
+organization = "Google Developers Group Brunei"
+period = "2022 - Present"
+description = "Google Developers Group (GDG) Brunei is a community of developers who are passionate about learning, sharing knowledge, and building solutions using Google technologies and beyond. As a committee member, I contribute to organizing events, workshops, and meetups that foster growth, innovation, and collaboration among tech enthusiasts. Our goal is to create an inclusive environment where developers of all backgrounds can connect, stay updated with the latest in tech, and advance their skills through hands-on sessions, talks, and community-driven initiatives."
+link = "https://gdg.community.dev/gdg-brunei-darussalam/"
+
+[[params.talks]]
+title = "Code Meets Culture: Analyzing Hari Raya Music with Youtube API in R"
+organization = "R>aya Meetup: Celebrating Aidil FitRi with R Programming"
+date = "18 April 2025"
+link = "#"
+
+[[params.talks]]
+title = "Introduction to R/RStudio Workshop"
+organization = "Brunei R User Group"
+date = "30 May 2024"
+link = "https://bruneir.github.io/posts/bru-3/"
+
+[[params.comp]]
+title = "Cyber SEA Game 2024 🇹🇭 "
+detail = " Brunei Team | 5th Place / 10 "
+date = "Oct 2024"
+
+[[params.comp]]
+title = "ITPSS CyberBattle 2024 🇧🇳"
+detail = " Finalist | 4th/10 (Qualifying) & 7th/10 (Final) "
+date = "Oct 2024"
 
 [[params.projects]]
 title = "From archives to AI: Residential property data across three decades in Brunei Darussalam"
@@ -72,11 +133,8 @@ link = "#"
 [[params.blogs]]
 title = "Code Meets Culture: Analyzing Hari Raya Music with Youtube API in R"
 date = "2025-04-18"
-summary = "At vero eos et accusamus et iusto odio dignissimos ducimus."
+summary = "An R>aya Meetup and sharing session of how I used Web APIs in R"
 tags = ["R Programming", "Web API", "Data Analysis"]
-content = """
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis...
-"""
 link = "https://hafeezulrzq.github.io/blogs/code-meets-culture"
 
 [[params.blogs]]
@@ -84,24 +142,8 @@ title = "Analysis of Religious Infrastructure in Brunei Darussalam"
 date = "2024-12-26"
 summary = "A vignette for the bruneimap package, which provides a comprehensive analysis of religious infrastructure in Brunei Darussalam."
 tags = ["R Programming", "Spatial Analysis"]
-content = """
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit...
-"""
 link = "https://bruneiverse.github.io/bruneimap/articles/masjid.html"
 
-
-[[params.voluntary]]
-role = "Head of Logistics"
-organization = "Brunei R User Group"
-period = "2024 - Present"
-description = "We are a community for people interested in Computer Software with a focus on R. R is a programming language for statistical computing and data visualization that has been adopted in the fields of data mining, bioinformatics, and data analysis. The purpose of this group is to connect with other R enthusiasts, exchange ideas, learn new techniques, and collaborate on exciting projects. Whether you are a seasoned IT professional or just starting your coding journey, this group provides a friendly environment to explore the diverse capabilities of R with engaging discussions, insightful presentations, and empowering networking opportunities."
-
-
-[[params.voluntary]]
-role = "Committee Member"
-organization = "Google Developers Group Brunei"
-period = "2022 - Present"
-description = "Google Developers Group (GDG) Brunei is a community of developers who are passionate about learning, sharing knowledge, and building solutions using Google technologies and beyond. As a committee member, I contribute to organizing events, workshops, and meetups that foster growth, innovation, and collaboration among tech enthusiasts. Our goal is to create an inclusive environment where developers of all backgrounds can connect, stay updated with the latest in tech, and advance their skills through hands-on sessions, talks, and community-driven initiatives."
 
 [menu]
   [[menu.main]]
