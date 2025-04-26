@@ -83,7 +83,7 @@ tags = ["R Programming", "Web API", "Data Analysis"]
 content = """
 Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis...
 """
-link = "https://medium.com/@loremipsum/future-dolor"
+link = "https://hafeezulrzq.github.io/blogs/code-meets-culture"
 
 [[params.blogs]]
 title = "Analysis of Religious Infrastructure in Brunei Darussalam"
@@ -93,7 +93,7 @@ tags = ["R Programming", "Spatial Analysis"]
 content = """
 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit...
 """
-link = "https://medium.com/@loremipsum/lorem-systems"
+link = "https://bruneiverse.github.io/bruneimap/articles/masjid.html"
 
 
 [[params.voluntary]]
