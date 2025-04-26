@@ -16,7 +16,7 @@ canonifyURLs = true
 name = "Hafeezul Raziq"
 location = "Brunei🇧🇳"
 description = "Data Enthusiast. Developer. Tech Community, GDG Brunei & Brunei R User Group. R, Python & SQL. CTF for fun."
-profile_image = "hafeezulrzq.github.io/themes/hugo-noir/images/profile.png"
+profile_image = "/images/profile.png"
 discord = "johndoe123"
 github = "https://github.com/hafeezulrzq"
 github_username = "hafeezulrzq"
@@ -47,7 +47,7 @@ url = "https://example.com/cert-gcp"
 company = "everBetter Innovations"
 role = "Product Development"
 period = "Nov 2024 - Current"
-logo = "hafeezulrzq.github.io/themes/hugo-noir/images/company/eb.png"
+logo = "/images/company/eb.png"
 description = "Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore."
 responsibilities = [
     "Dev support, QA, Testing",
@@ -59,14 +59,14 @@ responsibilities = [
 title = "From archives to AI: Residential property data across three decades in Brunei Darussalam"
 description = "Contribute to the data collection for a data article on house prices in Brunei Darussalam"
 tech = "Data collection"
-image = "hafeezulrzq.github.io/themes/hugo-noir/images/projects/data-collection-project.png"
+image = "/images/projects/data-collection-project.png"
 link = "https://doi.org/10.1016/j.dib.2025.111505"
 
 [[params.projects]]
 title = "Spatio-temporal Modelling of Advertised House Prices in Brunei Darussalam (2006-2017)"
 description = "My BSc Mathematics Research Project in Universiti Brunei Darussalam under the supervision of Dr. Haziq Jamil."
 tech = "R Programming, Statistical Modelling, Data Science"
-image = "themes/hugo-noir/images/projects/spatio-temporal-modelling.jpg"
+image = "/images/projects/spatio-temporal-modelling.jpg"
 link = "#"
 
 [[params.blogs]]
