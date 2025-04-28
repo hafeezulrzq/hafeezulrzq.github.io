@@ -280,26 +280,263 @@
 </script> 
         <main>
             
-<div class="w-1/2 mx-auto py-12">
-    <div class="max-w-3xl mx-auto p-8 border border-gray-800 rounded-2xl bg-[#121212]">
-        <h1 class="text-4xl font-bold mb-4">Code Meets Culture: Analyzing Hari Raya Music with YouTube API in R</h1>
+<div class="w-full md:w-4/5 lg:w-3/5 mx-auto py-8 px-4 md:px-0">
+    <div class="max-w-3xl mx-auto p-8 border border-gray-800 rounded-3xl bg-gradient-to-b from-[#121212] to-[#1a1a1a] shadow-2xl">
         
-            <div class="flex items-center gap-4 mb-8 text-gray-400">
-                <time datetime="2025-04-18">April 18, 2025</time>
-                <div class="flex gap-2">
-                    
-                    <span class="px-2 py-1 bg-gray-800 rounded-md text-xs font-medium text-gray-300">R Programming</span>
-                    
-                    <span class="px-2 py-1 bg-gray-800 rounded-md text-xs font-medium text-gray-300">Web API</span>
-                    
-                    <span class="px-2 py-1 bg-gray-800 rounded-md text-xs font-medium text-gray-300">Data Analysis</span>
-                    
+        <header class="mb-12">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Code Meets Culture: Analyzing Hari Raya Music with YouTube API in R</h1>
+            
+                <div class="flex flex-wrap items-center gap-4 mb-8 text-gray-400">
+                    <time datetime="2025-04-28" class="flex items-center">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                        </svg>
+                        April 28, 2025
+                    </time>
+                    <div class="flex flex-wrap gap-2">
+                        
+                        <span class="px-3 py-1 bg-gray-800 bg-opacity-50 backdrop-blur-sm rounded-full text-sm font-medium text-gray-300 hover:bg-gray-700 transition-colors">R Programming</span>
+                        
+                        <span class="px-3 py-1 bg-gray-800 bg-opacity-50 backdrop-blur-sm rounded-full text-sm font-medium text-gray-300 hover:bg-gray-700 transition-colors">Web API</span>
+                        
+                        <span class="px-3 py-1 bg-gray-800 bg-opacity-50 backdrop-blur-sm rounded-full text-sm font-medium text-gray-300 hover:bg-gray-700 transition-colors">Data Analysis</span>
+                        
+                    </div>
                 </div>
-            </div>
+            
+        </header>
+
         
-        
-        <div class="prose prose-invert max-w-none">
-            <p>Coming soon&hellip;</p>
+        <div class="prose prose-invert prose-lg max-w-none">
+            <style>
+                .prose {
+                    color: rgba(255, 255, 255, 0.9);
+                }
+                .prose h2 {
+                    margin-top: 2.5em;
+                    margin-bottom: 1em;
+                    font-size: 1.8em;
+                    color: white;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                    padding-bottom: 0.3em;
+                }
+                .prose h3 {
+                    margin-top: 2em;
+                    margin-bottom: 0.8em;
+                    font-size: 1.5em;
+                    color: rgba(255, 255, 255, 0.95);
+                }
+                .prose p {
+                    margin-top: 1.25em;
+                    margin-bottom: 1.25em;
+                    line-height: 1.8;
+                    color: rgba(255, 255, 255, 0.8);
+                }
+                .prose strong {
+                    color: white;
+                }
+                 
+                .prose ul {
+                    margin: 1.5em 0;
+                    padding-left: 1.2em;
+                    list-style-type: none;
+                }
+                .prose ul > li {
+                    position: relative;
+                    padding-left: 1.5em;
+                    margin: 0.5em 0;
+                    color: rgba(255, 255, 255, 0.8);
+                }
+                .prose ul > li::before {
+                    content: "•";
+                    position: absolute;
+                    left: 0;
+                    color: #f1f1f1;
+                    font-weight: bold;
+                    font-size: 1.2em;
+                    line-height: 1;
+                }
+                .prose ol {
+                    margin: 1.5em 0;
+                    padding-left: 0;
+                    list-style: none;
+                    counter-reset: list-counter;
+                }
+                .prose ol > li {
+                    position: relative;
+                    padding-left: 2.5em;
+                    margin: 0.5em 0;
+                    color: rgba(255, 255, 255, 0.8);
+                    counter-increment: list-counter;
+                }
+                .prose ol > li::before {
+                    content: counter(list-counter);
+                    position: absolute;
+                    left: 0;
+                    color: #f1f1f1;
+                    font-weight: 500;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 1.8em;
+                    height: 1.8em;
+                    background: rgba(255, 255, 255, 0.1);
+                    border-radius: 50%;
+                    margin-top: -0.2em;
+                    font-size: 0.8em;
+                }
+                 
+                .prose ul ul, 
+                .prose ul ol,
+                .prose ol ul,
+                .prose ol ol {
+                    margin: 0.5em 0;
+                }
+                .prose hr {
+                    margin: 3em 0;
+                    border-color: rgba(255, 255, 255, 0.1);
+                }
+                .prose table {
+                    margin: 2em 0;
+                    width: 100%;
+                    border-collapse: separate;
+                    border-spacing: 0;
+                }
+                .prose table th,
+                .prose table td {
+                    padding: 0.75em 1em;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    background: rgba(255, 255, 255, 0.03);
+                }
+                .prose table th {
+                    background: rgba(255, 255, 255, 0.05);
+                }
+                .prose pre {
+                    margin: 1.5em 0;
+                    padding: 1.5em;
+                    background: rgba(0, 0, 0, 0.3);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    border-radius: 0.5em;
+                    overflow-x: auto;
+                }
+                .prose code {
+                    background: rgba(255, 255, 255, 0.1);
+                    padding: 0.2em 0.4em;
+                    border-radius: 0.3em;
+                    font-size: 0.9em;
+                }
+                .prose a {
+                    color: #60a5fa;
+                    text-decoration: none;
+                    transition: color 0.2s;
+                }
+                .prose a:hover {
+                    color: #93c5fd;
+                }
+                .prose blockquote {
+                    border-left: 4px solid #60a5fa;
+                    padding-left: 1em;
+                    margin: 1.5em 0;
+                    color: rgba(255, 255, 255, 0.7);
+                    font-style: italic;
+                }
+                .prose img {
+                    border-radius: 0.5em;
+                    margin: 2em 0;
+                }
+                .prose *:first-child {
+                    margin-top: 0;
+                }
+            </style>
+            <h2 id="tldr">TLDR;</h2>
+<p>📊 Here&rsquo;s what we discovered:</p>
+<ul>
+<li>YouTube API provides powerful tools to analyze video statistics and trends</li>
+<li>The most viewed Hari Raya music video is Omar dan Hana&rsquo;s song, highlighting YouTube&rsquo;s popularity among children</li>
+<li>As of April 28, 2025, &ldquo;Serumpun&rdquo; holds the record for most liked Hari Raya music video, while &ldquo;Meriah Lain Macam&rdquo; has the highest view count</li>
+</ul>
+<hr>
+<h2 id="introduction">Introduction</h2>
+<p><em>Hello, World! Selamat Hari Raya Aidilfitri to everyone celebrating!</em> 🌙</p>
+<p>I recently had the honor of presenting at the <strong>Brunei R&gt;aya Meetup</strong> on April 18, 2025, hosted by the Brunei R User Group at UBD Library. The event was a fantastic opportunity to share knowledge alongside brilliant speakers:</p>
+<ul>
+<li><strong>Dr. Daphne Lai</strong>: Presented on Principal Component Analysis clustering of kuih raya</li>
+<li><strong>Muaz Mahdi</strong>: Explored eating behaviors during open houses using Markov chains</li>
+</ul>
+<p>You can find more details about the event on the <a href="https://bruneir.github.io/posts/bru-25-2-raya">Brunei R website</a>.</p>
+<p>In this blog post, I&rsquo;ll share my presentation on working with APIs in R, specifically focusing on using the YouTube API to analyze Hari Raya music trends.</p>
+<h2 id="understanding-apis-">Understanding APIs 🔌</h2>
+<p>An Application Programming Interface (API) serves as a communication bridge between different software systems. To better understand this concept, let&rsquo;s use a restaurant analogy:</p>
+<!-- raw HTML omitted -->
+<p>APIs can be broadly categorized into two types:</p>
+<ol>
+<li><strong>Data Retrieval APIs</strong>: Used to fetch information (what we&rsquo;ll focus on in this post)</li>
+<li><strong>Command/Action APIs</strong>: Used to perform specific actions</li>
+</ol>
+<p>APIs can be either:</p>
+<ul>
+<li>🔓 <strong>Keyless</strong>: Free to use without authentication</li>
+<li>🔑 <strong>Key-based</strong>: Require authentication through API keys</li>
+</ul>
+<h2 id="required-r-packages-">Required R Packages 📦</h2>
+<p>To work with APIs in R, we&rsquo;ll primarily use two essential packages:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># Install required packages</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">install.packages</span>(<span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;httr&#34;</span>, <span style="color:#e6db74">&#34;jsonlite&#34;</span>, <span style="color:#e6db74">&#34;tuber&#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Load the packages</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(httr)      <span style="color:#75715e"># For making HTTP requests</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(jsonlite)  <span style="color:#75715e"># For parsing JSON responses</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(tuber)     <span style="color:#75715e"># For YouTube API interactions</span>
+</span></span></code></pre></div><h2 id="setting-up-youtube-api-">Setting Up YouTube API 🎥</h2>
+<p>To access YouTube&rsquo;s data, you&rsquo;ll need to:</p>
+<ol>
+<li>Create a project in Google Cloud Console</li>
+<li>Enable the YouTube Data API v3</li>
+<li>Generate an API key</li>
+<li>Use the <code>tuber</code> package in R to interact with the API</li>
+</ol>
+<h2 id="data-analysis-hari-raya-music-videos-">Data Analysis: Hari Raya Music Videos 📊</h2>
+<p>Our analysis covers several aspects of Hari Raya music videos:</p>
+<h3 id="top-performers-">Top Performers 🏆</h3>
+<ul>
+<li>Top 10 most viewed videos</li>
+<li>Top 10 most liked videos</li>
+<li>Top 10 most commented videos</li>
+</ul>
+<h3 id="trend-analysis-">Trend Analysis 📈</h3>
+<ul>
+<li>Correlation between views, likes, and comments</li>
+<li>Historical ranking of videos (2009-2025)</li>
+<li>Seasonal patterns in engagement</li>
+</ul>
+<h2 id="limitations-and-considerations-">Limitations and Considerations ⚠️</h2>
+<p>While working with the YouTube API, we encountered some limitations:</p>
+<ul>
+<li>Search results are limited to short videos</li>
+<li>API quotas and rate limits</li>
+<li>Data freshness and update frequency</li>
+</ul>
+<h2 id="beyond-youtube-other-api-applications-">Beyond YouTube: Other API Applications 🌐</h2>
+<p>The world of APIs offers endless possibilities for data analysis:</p>
+<ul>
+<li>🌤️ Weather forecasting</li>
+<li>🎵 Spotify music trends</li>
+<li>📰 News headline analysis</li>
+<li>📱 Social media analytics</li>
+<li>🏛️ Government datasets</li>
+</ul>
+<h2 id="resources-and-further-reading-">Resources and Further Reading 📚</h2>
+<ul>
+<li><a href="https://developers.google.com/youtube/v3">YouTube API Documentation</a></li>
+<li><a href="https://github.com/public-apis/public-apis">Free APIs Collection</a></li>
+<li><a href="https://www.rdocumentation.org/">R Package Documentation</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design">API Best Practices Guide</a></li>
+</ul>
+<h2 id="conclusion-">Conclusion 🎯</h2>
+<p>Working with APIs opens up a world of real-time data analysis possibilities. Whether you&rsquo;re analyzing music trends, weather patterns, or social media engagement, APIs provide a powerful way to access and analyze data. I hope this post has inspired you to explore the world of APIs in your data analysis projects.</p>
+<hr>
+<h3 id="thank-you-">Thank you! 🙏</h3>
+<p>Feel free to reach out if you have any questions or would like to discuss API integration in your projects.</p>
 
         </div>
     </div>

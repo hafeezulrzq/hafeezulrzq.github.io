@@ -1,21 +1,170 @@
 {{ define "main" }}
-<div class="w-1/2 mx-auto py-12">
-    <div class="max-w-3xl mx-auto p-8 border border-gray-800 rounded-2xl bg-[#121212]">
-        <h1 class="text-4xl font-bold mb-4">{{ .Title }}</h1>
-        {{ if eq .Section "blogs" }}
-            <div class="flex items-center gap-4 mb-8 text-gray-400">
-                <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
-                <div class="flex gap-2">
-                    {{ range .Params.tags }}
-                    <span class="px-2 py-1 bg-gray-800 rounded-md text-xs font-medium text-gray-300">{{ . }}</span>
-                    {{ end }}
+<div class="w-full md:w-4/5 lg:w-3/5 mx-auto py-8 px-4 md:px-0">
+    <div class="max-w-3xl mx-auto p-8 border border-gray-800 rounded-3xl bg-gradient-to-b from-[#121212] to-[#1a1a1a] shadow-2xl">
+        <!-- Header Section -->
+        <header class="mb-12">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">{{ .Title }}</h1>
+            {{ if eq .Section "blogs" }}
+                <div class="flex flex-wrap items-center gap-4 mb-8 text-gray-400">
+                    <time datetime="{{ .Date.Format "2006-01-02" }}" class="flex items-center">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                        </svg>
+                        {{ .Date.Format "January 2, 2006" }}
+                    </time>
+                    <div class="flex flex-wrap gap-2">
+                        {{ range .Params.tags }}
+                        <span class="px-3 py-1 bg-gray-800 bg-opacity-50 backdrop-blur-sm rounded-full text-sm font-medium text-gray-300 hover:bg-gray-700 transition-colors">{{ . }}</span>
+                        {{ end }}
+                    </div>
                 </div>
-            </div>
-        {{ end }}
-        
-        <div class="prose prose-invert max-w-none">
+            {{ end }}
+        </header>
+
+        <!-- Content Section -->
+        <div class="prose prose-invert prose-lg max-w-none">
+            <style>
+                .prose {
+                    color: rgba(255, 255, 255, 0.9);
+                }
+                .prose h2 {
+                    margin-top: 2.5em;
+                    margin-bottom: 1em;
+                    font-size: 1.8em;
+                    color: white;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                    padding-bottom: 0.3em;
+                }
+                .prose h3 {
+                    margin-top: 2em;
+                    margin-bottom: 0.8em;
+                    font-size: 1.5em;
+                    color: rgba(255, 255, 255, 0.95);
+                }
+                .prose p {
+                    margin-top: 1.25em;
+                    margin-bottom: 1.25em;
+                    line-height: 1.8;
+                    color: rgba(255, 255, 255, 0.8);
+                }
+                .prose strong {
+                    color: white;
+                }
+                /* Enhanced list styling */
+                .prose ul {
+                    margin: 1.5em 0;
+                    padding-left: 1.2em;
+                    list-style-type: none;
+                }
+                .prose ul > li {
+                    position: relative;
+                    padding-left: 1.5em;
+                    margin: 0.5em 0;
+                    color: rgba(255, 255, 255, 0.8);
+                }
+                .prose ul > li::before {
+                    content: "•";
+                    position: absolute;
+                    left: 0;
+                    color: #f1f1f1;
+                    font-weight: bold;
+                    font-size: 1.2em;
+                    line-height: 1;
+                }
+                .prose ol {
+                    margin: 1.5em 0;
+                    padding-left: 0;
+                    list-style: none;
+                    counter-reset: list-counter;
+                }
+                .prose ol > li {
+                    position: relative;
+                    padding-left: 2.5em;
+                    margin: 0.5em 0;
+                    color: rgba(255, 255, 255, 0.8);
+                    counter-increment: list-counter;
+                }
+                .prose ol > li::before {
+                    content: counter(list-counter);
+                    position: absolute;
+                    left: 0;
+                    color: #f1f1f1;
+                    font-weight: 500;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 1.8em;
+                    height: 1.8em;
+                    background: rgba(255, 255, 255, 0.1);
+                    border-radius: 50%;
+                    margin-top: -0.2em;
+                    font-size: 0.8em;
+                }
+                /* Nested lists */
+                .prose ul ul, 
+                .prose ul ol,
+                .prose ol ul,
+                .prose ol ol {
+                    margin: 0.5em 0;
+                }
+                .prose hr {
+                    margin: 3em 0;
+                    border-color: rgba(255, 255, 255, 0.1);
+                }
+                .prose table {
+                    margin: 2em 0;
+                    width: 100%;
+                    border-collapse: separate;
+                    border-spacing: 0;
+                }
+                .prose table th,
+                .prose table td {
+                    padding: 0.75em 1em;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    background: rgba(255, 255, 255, 0.03);
+                }
+                .prose table th {
+                    background: rgba(255, 255, 255, 0.05);
+                }
+                .prose pre {
+                    margin: 1.5em 0;
+                    padding: 1.5em;
+                    background: rgba(0, 0, 0, 0.3);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    border-radius: 0.5em;
+                    overflow-x: auto;
+                }
+                .prose code {
+                    background: rgba(255, 255, 255, 0.1);
+                    padding: 0.2em 0.4em;
+                    border-radius: 0.3em;
+                    font-size: 0.9em;
+                }
+                .prose a {
+                    color: #60a5fa;
+                    text-decoration: none;
+                    transition: color 0.2s;
+                }
+                .prose a:hover {
+                    color: #93c5fd;
+                }
+                .prose blockquote {
+                    border-left: 4px solid #60a5fa;
+                    padding-left: 1em;
+                    margin: 1.5em 0;
+                    color: rgba(255, 255, 255, 0.7);
+                    font-style: italic;
+                }
+                .prose img {
+                    border-radius: 0.5em;
+                    margin: 2em 0;
+                }
+                .prose *:first-child {
+                    margin-top: 0;
+                }
+            </style>
             {{ .Content }}
         </div>
     </div>
 </div>
-{{ end }} 
+{{ end }}

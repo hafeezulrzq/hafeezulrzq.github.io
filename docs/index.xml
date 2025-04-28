@@ -6,8 +6,15 @@
     <description>Recent content on My Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 26 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hafeezulrzq.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code Meets Culture: Analyzing Hari Raya Music with YouTube API in R</title>
+      <link>https://hafeezulrzq.github.io/blogs/code-meets-culture/</link>
+      <pubDate>Mon, 28 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://hafeezulrzq.github.io/blogs/code-meets-culture/</guid>
+      <description>An R&amp;gt;aya Meetup and sharing session of how I used Web APIs in R</description>
+    </item>
     <item>
       <title>About</title>
       <link>https://hafeezulrzq.github.io/about/</link>
@@ -30,25 +37,11 @@
       <description></description>
     </item>
     <item>
-      <title>Hello World</title>
-      <link>https://hafeezulrzq.github.io/posts/hello-world/</link>
-      <pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://hafeezulrzq.github.io/posts/hello-world/</guid>
-      <description>&lt;p&gt;Welcome to my website powered by Hugo Noir!&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Projects</title>
       <link>https://hafeezulrzq.github.io/projects/</link>
       <pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://hafeezulrzq.github.io/projects/</guid>
       <description></description>
-    </item>
-    <item>
-      <title>Code Meets Culture: Analyzing Hari Raya Music with YouTube API in R</title>
-      <link>https://hafeezulrzq.github.io/blogs/code-meets-culture/</link>
-      <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://hafeezulrzq.github.io/blogs/code-meets-culture/</guid>
-      <description>An R&amp;gt;aya Meetup and sharing session of how I used Web APIs in R</description>
     </item>
   </channel>
 </rss>
