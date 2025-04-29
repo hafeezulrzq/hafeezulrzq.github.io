@@ -3,13 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Code Meets Culture: Analyzing Hari Raya Music with YouTube API in R - My Website</title>
+        <title>Code Meets Culture: Analyzing Hari Raya Music with YouTube API in R - Hafeezul Raziq</title>
         
         
-        <link rel="apple-touch-icon" sizes="180x180" href="https://hafeezulrzq.github.io/static/favicon_io/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="https://hafeezulrzq.github.io/static/favicon_io/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="https://hafeezulrzq.github.io/static/favicon_io/favicon-16x16.png">
-        <link rel="manifest" href="https://hafeezulrzq.github.io/static/favicon_io/site.webmanifest">        
+        <link rel="apple-touch-icon" sizes="180x180" href="https://hafeezulrzq.github.io/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://hafeezulrzq.github.io/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://hafeezulrzq.github.io/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="https://hafeezulrzq.github.io/favicon_io/site.webmanifest">        
         <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
         <link rel="preload" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" as="style">
         
@@ -283,6 +283,9 @@
 <div class="w-full md:w-4/5 lg:w-3/5 mx-auto py-8 px-4 md:px-0">
     <div class="max-w-3xl mx-auto p-8 border border-gray-800 rounded-3xl bg-gradient-to-b from-[#121212] to-[#1a1a1a] shadow-2xl">
         
+        
+        
+        
         <header class="mb-12">
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Code Meets Culture: Analyzing Hari Raya Music with YouTube API in R</h1>
             
@@ -419,6 +422,24 @@
                     border-radius: 0.5em;
                     overflow-x: auto;
                 }
+                .prose pre code {
+                    padding: 0;
+                    background: none;
+                    border-radius: 0;
+                    white-space: pre;
+                    display: block;
+                    overflow-x: auto;
+                    line-height: 1.5;
+                }
+                 
+                .prose pre code:first-child {
+                    margin-top: 0;
+                    padding-top: 0;
+                }
+                .prose pre code:last-child {
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                }
                 .prose code {
                     background: rgba(255, 255, 255, 0.1);
                     padding: 0.2em 0.4em;
@@ -467,7 +488,7 @@
 <p>In this blog post, I&rsquo;ll share my presentation on working with APIs in R, specifically focusing on using the YouTube API to analyze Hari Raya music trends.</p>
 <h2 id="understanding-apis-">Understanding APIs 🔌</h2>
 <p>An Application Programming Interface (API) serves as a communication bridge between different software systems. To better understand this concept, let&rsquo;s use a restaurant analogy:</p>
-<!-- raw HTML omitted -->
+<p><img src="/images/what-is-api.png" alt="What is API"></p>
 <p>APIs can be broadly categorized into two types:</p>
 <ol>
 <li><strong>Data Retrieval APIs</strong>: Used to fetch information (what we&rsquo;ll focus on in this post)</li>

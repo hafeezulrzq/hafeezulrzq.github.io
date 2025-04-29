@@ -1,6 +1,13 @@
 {{ define "main" }}
 <div class="w-full md:w-4/5 lg:w-3/5 mx-auto py-8 px-4 md:px-0">
     <div class="max-w-3xl mx-auto p-8 border border-gray-800 rounded-3xl bg-gradient-to-b from-[#121212] to-[#1a1a1a] shadow-2xl">
+        <!-- Featured Image -->
+        {{ if .Params.image }}
+        <div class="mb-8 -mx-8 -mt-8">
+            <img src="{{ .Params.image }}" alt="{{ .Title }}" class="w-full h-[400px] md:h-[500px] object-cover rounded-t-3xl">
+        </div>
+        {{ end }}
+        
         <!-- Header Section -->
         <header class="mb-12">
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">{{ .Title }}</h1>
@@ -133,6 +140,24 @@
                     border: 1px solid rgba(255, 255, 255, 0.1);
                     border-radius: 0.5em;
                     overflow-x: auto;
+                }
+                .prose pre code {
+                    padding: 0;
+                    background: none;
+                    border-radius: 0;
+                    white-space: pre;
+                    display: block;
+                    overflow-x: auto;
+                    line-height: 1.5;
+                }
+                /* Remove extra space at start and end of code blocks */
+                .prose pre code:first-child {
+                    margin-top: 0;
+                    padding-top: 0;
+                }
+                .prose pre code:last-child {
+                    margin-bottom: 0;
+                    padding-bottom: 0;
                 }
                 .prose code {
                     background: rgba(255, 255, 255, 0.1);

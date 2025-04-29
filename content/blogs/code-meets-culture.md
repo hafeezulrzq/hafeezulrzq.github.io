@@ -34,7 +34,7 @@ In this blog post, I'll share my presentation on working with APIs in R, specifi
 
 An Application Programming Interface (API) serves as a communication bridge between different software systems. To better understand this concept, let's use a restaurant analogy:
 
-<img src="/static/what-is-api.png" alt="What is API" style="max-width:100%; height:auto;" />
+![What is API](/images/what-is-api.png)
 
 APIs can be broadly categorized into two types:
 

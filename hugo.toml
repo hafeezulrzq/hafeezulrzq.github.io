@@ -1,6 +1,6 @@
 baseURL = 'https://hafeezulrzq.github.io/'
 languageCode = 'en-us'
-title = 'My Website'
+title = 'Hafeezul Raziq'
 theme = 'hugo-noir'
 publishDir = 'docs'
 

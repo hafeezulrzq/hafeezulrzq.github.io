@@ -17,7 +17,6 @@ name = "Hafeezul Raziq"
 location = "Brunei🇧🇳"
 description = "Data Enthusiast. Developer. Tech Community. R, Python & SQL. CTF for fun."
 profile_image = "/images/profile.png"
-discord = "johndoe123"
 github = "https://github.com/hafeezulrzq"
 github_username = "hafeezulrzq"
 email = "hafeezul.rzq@gmail.com"
@@ -136,6 +135,7 @@ date = "2025-04-18"
 summary = "An R>aya Meetup and sharing session of how I used Web APIs in R"
 tags = ["R Programming", "Web API", "Data Analysis"]
 link = "https://hafeezulrzq.github.io/blogs/code-meets-culture"
+image = "/images/blogs/r-raya-01.jpg"
 
 [[params.blogs]]
 title = "Analysis of Religious Infrastructure in Brunei Darussalam"
@@ -143,6 +143,8 @@ date = "2024-12-26"
 summary = "A vignette for the bruneimap package, which provides a comprehensive analysis of religious infrastructure in Brunei Darussalam."
 tags = ["R Programming", "Spatial Analysis"]
 link = "https://bruneiverse.github.io/bruneimap/articles/masjid.html"
+image = "/images/blogs/masjid-brunei-map.png"
+
 
 
 [menu]
