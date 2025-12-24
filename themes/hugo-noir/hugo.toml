@@ -129,6 +129,13 @@ tech = "R Programming, Statistical Modelling, Data Science"
 image = "/images/projects/spatio-temporal-modelling.jpg"
 link = "#"
 
+[[params.projects]]
+title = "Warren Buffett Financial Ratio Checker"
+description = "An interactive web tool to evaluate companies based on Warren Buffett's investment principles. Analyze financial ratios and get ratings according to Buffett's criteria."
+tech = "Web Development, Financial Analysis, JavaScript"
+image = "/images/projects/warren-buffet-checker.png"
+link = "/warren-buffet-financial-ratio-checker/"
+
 [[params.blogs]]
 title = "Code Meets Culture: Analyzing Hari Raya Music with Youtube API in R"
 date = "2025-04-18"
