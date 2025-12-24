@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Warren Buffett Financial Ratio Checker - Hafeezul Raziq</title>
+        
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="https://hafeezulrzq.github.io/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://hafeezulrzq.github.io/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://hafeezulrzq.github.io/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="https://hafeezulrzq.github.io/favicon_io/site.webmanifest">        
+        <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" as="style">
+        
+        
+        <style>
+            html, body {
+                background-color: #121212;
+                color: #f3f4f6;
+            }            
+            .border {
+                border-color: #374151;
+            }            
+            .carousel-item {
+                display: inline-block;
+                margin: 0 1rem;
+            }            
+            .flex {
+                display: flex;
+            }
+            .flex-col {
+                flex-direction: column;
+            }
+            
+            @media (min-width: 768px) {
+                .md\:flex-row {
+                    flex-direction: row;
+                }
+            }
+            
+            .tech-carousel {
+                overflow: hidden;
+                width: 100%;
+                padding: 1rem 0;
+            }
+            
+            .carousel-track {
+                white-space: nowrap;
+            }
+        </style>
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <script>
+            
+            if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        </script>
+        <style>
+            :root {
+                color-scheme: dark;
+            }
+            
+            body {
+                @apply bg-[#121212] text-gray-100;
+            }
+
+            .tech-icon {
+                filter: grayscale(100%) brightness(200%);
+                transition: all 0.3s ease;
+            }
+            .tech-icon:hover {
+                filter: none;
+            }
+            
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+            
+            .tech-carousel {
+                width: 100%;
+                padding: 1rem 0;
+            }
+            
+            .tech-track {
+                width: fit-content;
+                animation: scroll 20s linear infinite;
+            }
+            
+            .tech-track:hover {
+                animation-play-state: paused;
+            }
+            
+            .tech-slide {
+                float: left;
+            }
+        </style>
+    </head>
+    <body class="min-h-screen bg-[#121212] text-gray-100">
+        
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C0RTF18BT4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-C0RTF18BT4');
+    </script>
+    
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+    </style>
+</head>
+<header class="py-6 relative">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div class="flex justify-between items-center">
+                <a href="https://hafeezulrzq.github.io/" class="text-xl font-bold text-white hover:text-gray-300 transition-colors duration-300">
+                    Hafeezul Raziq
+                </a>
+                
+                <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>            
+            
+            <nav class="hidden md:flex flex-wrap justify-center items-center gap-4 md:gap-6">
+                
+                
+                <a href="https://hafeezulrzq.github.io/about/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">About</a>
+                
+                <a href="https://hafeezulrzq.github.io/experience/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Experience</a>
+                
+                <a href="https://hafeezulrzq.github.io/projects/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Projects</a>
+                
+                <a href="https://hafeezulrzq.github.io/blogs/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Blogs</a>
+                
+                <a href="https://hafeezulrzq.github.io/contact/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Contact Me</a>
+                
+            </nav>
+            <div class="hidden md:flex justify-end">
+                <div class="flex items-center">
+                    <span class="text-lg text-gray-300 mr-2">Local Time:</span>
+                    <div id="local-time" class="text-lg text-gray-300"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden transition-all duration-300">
+        <div class="flex flex-col h-full">
+            <div class="flex justify-between items-center p-6 border-b border-gray-800">
+                <span class="text-xl font-bold text-white">Menu</span>
+                <button id="mobile-menu-close" class="text-gray-300 hover:text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav class="flex flex-col p-6 space-y-4">
+                
+                <a href="https://hafeezulrzq.github.io/about/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">About</a>
+                
+                <a href="https://hafeezulrzq.github.io/experience/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Experience</a>
+                
+                <a href="https://hafeezulrzq.github.io/projects/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Projects</a>
+                
+                <a href="https://hafeezulrzq.github.io/blogs/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Blogs</a>
+                
+                <a href="https://hafeezulrzq.github.io/contact/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Contact Me</a>
+                
+            </nav>
+            <div class="mt-auto p-6 border-t border-gray-800">
+                <div class="flex items-center justify-center">
+                    <span class="text-lg text-gray-300 mr-2">Local Time:</span>
+                    <div id="mobile-local-time" class="text-lg text-gray-300"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+    
+    function updateLocalTime() {
+        const timeElements = document.querySelectorAll('#local-time, #mobile-local-time');
+        timeElements.forEach(element => {
+            if (element) {
+                const now = new Date();
+                const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                element.textContent = timeString;
+            }
+        });
+    }
+    updateLocalTime();
+    setInterval(updateLocalTime, 1000);
+
+    
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    function toggleMobileMenu() {
+        const isHidden = mobileMenu.classList.contains('hidden');
+        if (isHidden) {
+            mobileMenu.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; 
+        } else {
+            mobileMenu.classList.add('hidden');
+            document.body.style.overflow = ''; 
+        }
+    }
+
+    mobileMenuButton.addEventListener('click', toggleMobileMenu);
+    mobileMenuClose.addEventListener('click', toggleMobileMenu);
+
+    
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            toggleMobileMenu();
+        });
+    });
+
+    
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    if (themeToggleBtn) {
+        const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+        const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            themeToggleLightIcon.classList.remove('hidden');
+            themeToggleDarkIcon.classList.add('hidden');
+        } else {
+            themeToggleLightIcon.classList.add('hidden');
+            themeToggleDarkIcon.classList.remove('hidden');
+        }
+
+        themeToggleBtn.addEventListener('click', function() {
+            themeToggleDarkIcon.classList.toggle('hidden');
+            themeToggleLightIcon.classList.toggle('hidden');
+
+            if (localStorage.getItem('color-theme')) {
+                if (localStorage.getItem('color-theme') === 'light') {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                }
+            } else {
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                }
+            }
+        });
+    }
+</script> 
+        <main>
+            
+<div class="w-full md:w-4/5 lg:w-3/5 mx-auto py-8 px-4 md:px-0">
+    <div class="max-w-4xl mx-auto p-8 border border-gray-800 rounded-3xl bg-gradient-to-b from-[#121212] to-[#1a1a1a] shadow-2xl">
+        
+        <header class="mb-12 text-center">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                📊 Warren Buffett Financial Ratio Checker
+            </h1>
+            <p class="text-gray-400 text-lg">Evaluate investment quality using Warren Buffett's investment criteria</p>
+        </header>
+
+        
+        <div class="mb-8 p-6 bg-gray-900 border border-gray-800 rounded-lg">
+            <h2 class="text-xl font-semibold text-gray-200 mb-3">About This Tool</h2>
+            <p class="text-gray-400 leading-relaxed mb-4">
+                This tool evaluates companies based on Warren Buffett's investment principles. Enter the financial ratios below, and we'll analyze whether the company meets Buffett's criteria for a quality investment. The analysis considers factors like profitability, debt levels, valuation, and financial stability.
+            </p>
+            
+            <div class="mt-4 pt-4 border-t border-gray-800">
+                <p class="text-gray-300 italic text-sm leading-relaxed">
+                    "It's far better to buy a wonderful company at a fair price than a fair company at a wonderful price."
+                </p>
+                <p class="text-gray-500 text-xs mt-2">— Warren Buffett</p>
+            </div>
+        </div>
+
+        
+        
+        <div class="prose prose-invert prose-lg max-w-none mb-8">
+            <h2 id="financial-ratios-evaluated">Financial Ratios Evaluated</h2>
+<p>This tool evaluates companies based on the following ratios, each contributing to the overall investment score:</p>
+<h3 id="1-return-on-equity-roe---15-points">1. Return on Equity (ROE) - 15 points</h3>
+<p>Measures how effectively a company uses shareholders&rsquo; equity. Buffett prefers companies with ROE consistently above 15%.</p>
+<h3 id="2-debt-to-equity-ratio---15-points">2. Debt-to-Equity Ratio - 15 points</h3>
+<p>Lower debt means less financial risk. Buffett prefers companies with debt-to-equity ratio below 0.5.</p>
+<h3 id="3-current-ratio---10-points">3. Current Ratio - 10 points</h3>
+<p>Measures short-term liquidity. A ratio above 1.5 indicates good ability to cover short-term obligations.</p>
+<h3 id="4-net-profit-margin---15-points">4. Net Profit Margin - 15 points</h3>
+<p>Shows profitability per dollar of revenue. Higher and consistent margins are preferred.</p>
+<h3 id="5-price-to-earnings-pe-ratio---10-points">5. Price-to-Earnings (P/E) Ratio - 10 points</h3>
+<p>Valuation metric. Buffett prefers P/E ratios below 20, though this varies by industry.</p>
+<h3 id="6-price-to-book-pb-ratio---10-points">6. Price-to-Book (P/B) Ratio - 10 points</h3>
+<p>Compares market value to book value. A P/B ratio below 3 is generally considered reasonable.</p>
+<h3 id="7-earnings-growth-rate---10-points">7. Earnings Growth Rate - 10 points</h3>
+<p>Consistent earnings growth indicates a strong business. Buffett looks for steady, predictable growth.</p>
+<h3 id="8-free-cash-flow---10-points">8. Free Cash Flow - 10 points</h3>
+<p>Positive and growing free cash flow indicates financial health and ability to reinvest or return capital to shareholders.</p>
+<p><strong>Total Possible Score: 100 points</strong></p>
+<h2 id="rating-system">Rating System</h2>
+<ul>
+<li><strong>80-100%</strong>: Excellent Rating According to Warren Buffett Principles</li>
+<li><strong>65-79%</strong>: Good Rating According to Warren Buffett Principles</li>
+<li><strong>50-64%</strong>: Moderate Rating According to Warren Buffett Principles</li>
+<li><strong>Below 50%</strong>: Poor Rating According to Warren Buffett Principles</li>
+</ul>
+<p>The tool evaluates businesses based on how well they align with Warren Buffett&rsquo;s investment philosophy, focusing on long-term value, financial stability, and sustainable competitive advantages.</p>
+<h2 id="important-notes">Important Notes</h2>
+<p>⚠️ <strong>Disclaimer</strong>: This tool is based on Warren Buffett&rsquo;s general investment principles and is for educational purposes only. It should not be considered as financial advice. Always conduct thorough due diligence before making investment decisions.</p>
+<ul>
+<li>Industry-specific factors may affect the interpretation of certain ratios</li>
+<li>Market conditions and company-specific circumstances should also be considered</li>
+<li>This analysis is a starting point for further research, not a definitive investment recommendation</li>
+</ul>
+
+        </div>
+        
+
+        
+        <form id="ratioForm" class="space-y-6">
+            
+            <div class="bg-gray-900 border border-gray-800 rounded-lg p-6 transition-all hover:border-purple-600">
+                <label for="ticker-name" class="block text-xl font-semibold text-gray-200 mb-2">Company Ticker / Name</label>
+                <p class="text-gray-400 text-sm mb-4">
+                    Enter the stock ticker symbol or company name (e.g., AAPL, MSFT, Apple Inc.)
+                </p>
+                <input type="text" id="ticker-name" name="ticker-name" placeholder="e.g., AAPL or Apple Inc." 
+                       class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 placeholder-gray-500 focus:outline-none focus:border-purple-600 focus:ring-1 focus:ring-purple-600 text-lg">
+            </div>
+
+            
+            <div class="ratio-group bg-gray-900 border border-gray-800 rounded-lg p-6 transition-all hover:border-purple-600" data-ratio="roe">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-semibold text-gray-200">Return on Equity (ROE)</h3>
+                    <span class="ratio-status px-3 py-1 rounded-full text-xs font-semibold uppercase bg-gray-800 text-gray-400" id="roe-status">Pending</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">
+                    Measures how effectively a company uses shareholders' equity. Buffett prefers companies with ROE consistently above 15%.
+                </p>
+                <div class="flex flex-col md:flex-row gap-4 items-end">
+                    <div class="flex-1">
+                        <label for="roe" class="block text-sm font-medium text-gray-300 mb-2">ROE (%)</label>
+                        <input type="number" id="roe" name="roe" step="0.1" placeholder="e.g., 20.5" 
+                               class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 placeholder-gray-500 focus:outline-none focus:border-purple-600 focus:ring-1 focus:ring-purple-600">
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <input type="checkbox" id="roe-consistent" name="roe-consistent" 
+                               class="w-5 h-5 text-purple-600 bg-gray-800 border-gray-700 rounded focus:ring-purple-600">
+                        <label for="roe-consistent" class="text-sm text-gray-400 cursor-pointer">Consistent over 5+ years</label>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="ratio-group bg-gray-900 border border-gray-800 rounded-lg p-6 transition-all hover:border-purple-600" data-ratio="debt-equity">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-semibold text-gray-200">Debt-to-Equity Ratio</h3>
+                    <span class="ratio-status px-3 py-1 rounded-full text-xs font-semibold uppercase bg-gray-800 text-gray-400" id="debt-equity-status">Pending</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">
+                    Lower debt means less financial risk. Buffett prefers companies with debt-to-equity ratio below 0.5.
+                </p>
+                <div class="flex-1">
+                    <label for="debt-equity" class="block text-sm font-medium text-gray-300 mb-2">Debt-to-Equity Ratio</label>
+                    <input type="number" id="debt-equity" name="debt-equity" step="0.01" placeholder="e.g., 0.3" 
+                           class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 placeholder-gray-500 focus:outline-none focus:border-purple-600 focus:ring-1 focus:ring-purple-600">
+                </div>
+            </div>
+
+            
+            <div class="ratio-group bg-gray-900 border border-gray-800 rounded-lg p-6 transition-all hover:border-purple-600" data-ratio="current-ratio">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-semibold text-gray-200">Current Ratio</h3>
+                    <span class="ratio-status px-3 py-1 rounded-full text-xs font-semibold uppercase bg-gray-800 text-gray-400" id="current-ratio-status">Pending</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">
+                    Measures short-term liquidity. A ratio above 1.5 indicates good ability to cover short-term obligations.
+                </p>
+                <div class="flex-1">
+                    <label for="current-ratio" class="block text-sm font-medium text-gray-300 mb-2">Current Ratio</label>
+                    <input type="number" id="current-ratio" name="current-ratio" step="0.1" placeholder="e.g., 2.0" 
+                           class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 placeholder-gray-500 focus:outline-none focus:border-purple-600 focus:ring-1 focus:ring-purple-600">
+                </div>
+            </div>
+
+            
+            <div class="ratio-group bg-gray-900 border border-gray-800 rounded-lg p-6 transition-all hover:border-purple-600" data-ratio="profit-margin">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-semibold text-gray-200">Net Profit Margin</h3>
+                    <span class="ratio-status px-3 py-1 rounded-full text-xs font-semibold uppercase bg-gray-800 text-gray-400" id="profit-margin-status">Pending</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">
+                    Shows how much profit a company makes per dollar of revenue. Higher and consistent margins are preferred.
+                </p>
+                <div class="flex flex-col md:flex-row gap-4 items-end">
+                    <div class="flex-1">
+                        <label for="profit-margin" class="block text-sm font-medium text-gray-300 mb-2">Net Profit Margin (%)</label>
+                        <input type="number" id="profit-margin" name="profit-margin" step="0.1" placeholder="e.g., 15.0" 
+                               class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 placeholder-gray-500 focus:outline-none focus:border-purple-600 focus:ring-1 focus:ring-purple-600">
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <input type="checkbox" id="profit-margin-consistent" name="profit-margin-consistent" 
+                               class="w-5 h-5 text-purple-600 bg-gray-800 border-gray-700 rounded focus:ring-purple-600">
+                        <label for="profit-margin-consistent" class="text-sm text-gray-400 cursor-pointer">Consistent margins</label>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="ratio-group bg-gray-900 border border-gray-800 rounded-lg p-6 transition-all hover:border-purple-600" data-ratio="pe-ratio">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-semibold text-gray-200">Price-to-Earnings (P/E) Ratio</h3>
+                    <span class="ratio-status px-3 py-1 rounded-full text-xs font-semibold uppercase bg-gray-800 text-gray-400" id="pe-ratio-status">Pending</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">
+                    Lower P/E ratios may indicate better value. Buffett prefers P/E ratios below 20, though this varies by industry.
+                </p>
+                <div class="flex-1">
+                    <label for="pe-ratio" class="block text-sm font-medium text-gray-300 mb-2">P/E Ratio</label>
+                    <input type="number" id="pe-ratio" name="pe-ratio" step="0.1" placeholder="e.g., 18.5" 
+                           class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 placeholder-gray-500 focus:outline-none focus:border-purple-600 focus:ring-1 focus:ring-purple-600">
+                </div>
+            </div>
+
+            
+            <div class="ratio-group bg-gray-900 border border-gray-800 rounded-lg p-6 transition-all hover:border-purple-600" data-ratio="pb-ratio">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-semibold text-gray-200">Price-to-Book (P/B) Ratio</h3>
+                    <span class="ratio-status px-3 py-1 rounded-full text-xs font-semibold uppercase bg-gray-800 text-gray-400" id="pb-ratio-status">Pending</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">
+                    Compares market value to book value. A P/B ratio below 3 is generally considered reasonable.
+                </p>
+                <div class="flex-1">
+                    <label for="pb-ratio" class="block text-sm font-medium text-gray-300 mb-2">P/B Ratio</label>
+                    <input type="number" id="pb-ratio" name="pb-ratio" step="0.1" placeholder="e.g., 2.5" 
+                           class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 placeholder-gray-500 focus:outline-none focus:border-purple-600 focus:ring-1 focus:ring-purple-600">
+                </div>
+            </div>
+
+            
+            <div class="ratio-group bg-gray-900 border border-gray-800 rounded-lg p-6 transition-all hover:border-purple-600" data-ratio="earnings-growth">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-semibold text-gray-200">Earnings Growth Rate</h3>
+                    <span class="ratio-status px-3 py-1 rounded-full text-xs font-semibold uppercase bg-gray-800 text-gray-400" id="earnings-growth-status">Pending</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">
+                    Consistent earnings growth indicates a strong business. Buffett looks for steady, predictable growth.
+                </p>
+                <div class="flex flex-col md:flex-row gap-4 items-end">
+                    <div class="flex-1">
+                        <label for="earnings-growth" class="block text-sm font-medium text-gray-300 mb-2">Average Annual Earnings Growth (%)</label>
+                        <input type="number" id="earnings-growth" name="earnings-growth" step="0.1" placeholder="e.g., 10.0" 
+                               class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 placeholder-gray-500 focus:outline-none focus:border-purple-600 focus:ring-1 focus:ring-purple-600">
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <input type="checkbox" id="earnings-growth-consistent" name="earnings-growth-consistent" 
+                               class="w-5 h-5 text-purple-600 bg-gray-800 border-gray-700 rounded focus:ring-purple-600">
+                        <label for="earnings-growth-consistent" class="text-sm text-gray-400 cursor-pointer">Consistent growth pattern</label>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="ratio-group bg-gray-900 border border-gray-800 rounded-lg p-6 transition-all hover:border-purple-600" data-ratio="free-cash-flow">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-semibold text-gray-200">Free Cash Flow</h3>
+                    <span class="ratio-status px-3 py-1 rounded-full text-xs font-semibold uppercase bg-gray-800 text-gray-400" id="free-cash-flow-status">Pending</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">
+                    Positive and growing free cash flow indicates financial health and ability to reinvest or return capital to shareholders.
+                </p>
+                <div class="flex flex-col md:flex-row gap-4 items-end">
+                    <div class="flex-1">
+                        <label for="free-cash-flow" class="block text-sm font-medium text-gray-300 mb-2">Free Cash Flow (Millions)</label>
+                        <input type="number" id="free-cash-flow" name="free-cash-flow" step="0.1" placeholder="e.g., 5000" 
+                               class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 placeholder-gray-500 focus:outline-none focus:border-purple-600 focus:ring-1 focus:ring-purple-600">
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <input type="checkbox" id="free-cash-flow-growing" name="free-cash-flow-growing" 
+                               class="w-5 h-5 text-purple-600 bg-gray-800 border-gray-700 rounded focus:ring-purple-600">
+                        <label for="free-cash-flow-growing" class="text-sm text-gray-400 cursor-pointer">Growing over time</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="w-full py-4 bg-gradient-to-r from-purple-600 to-purple-800 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-purple-900 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                Calculate Investment Rating
+            </button>
+        </form>
+
+        
+        <div id="result-panel" class="result-panel hidden mt-8 p-8 rounded-lg border-2">
+            <div class="text-center mb-6">
+                <div id="result-company" class="text-2xl font-bold text-gray-200 mb-4"></div>
+                <div class="result-score text-5xl font-bold mb-4" id="result-score"></div>
+                <div class="result-title text-2xl font-semibold mb-4" id="result-title"></div>
+                <div class="result-description text-gray-300 leading-relaxed mb-6" id="result-description"></div>
+                
+                <div id="result-quote" class="mt-6 pt-6 border-t border-gray-700">
+                    <p class="text-gray-300 italic text-base leading-relaxed" id="quote-text"></p>
+                    <p class="text-gray-500 text-sm mt-2">— Warren Buffett</p>
+                </div>
+            </div>
+            <div class="bg-gray-900 border border-gray-800 rounded-lg p-6 mt-6">
+                <h3 class="text-xl font-semibold text-gray-200 mb-4">Analysis Summary</h3>
+                <div id="result-details-list" class="space-y-3"></div>
+            </div>
+            <button type="button" onclick="resetForm()" class="w-full mt-6 py-3 bg-gray-700 text-gray-200 font-semibold rounded-lg hover:bg-gray-600 transition-colors duration-300">
+                Reset & Analyze Another Company
+            </button>
+        </div>
+    </div>
+</div>
+
+<style>
+    .status-good {
+        background: rgba(34, 197, 94, 0.2) !important;
+        color: #4ade80 !important;
+        border: 1px solid rgba(34, 197, 94, 0.3);
+    }
+    .status-warning {
+        background: rgba(234, 179, 8, 0.2) !important;
+        color: #fbbf24 !important;
+        border: 1px solid rgba(234, 179, 8, 0.3);
+    }
+    .status-bad {
+        background: rgba(239, 68, 68, 0.2) !important;
+        color: #f87171 !important;
+        border: 1px solid rgba(239, 68, 68, 0.3);
+    }
+    .status-pending {
+        background: rgba(75, 85, 99, 0.5) !important;
+        color: #9ca3af !important;
+    }
+    .result-excellent {
+        background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(22, 163, 74, 0.1) 100%);
+        border-color: #22c55e;
+    }
+    .result-good {
+        background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%);
+        border-color: #3b82f6;
+    }
+    .result-moderate {
+        background: linear-gradient(135deg, rgba(234, 179, 8, 0.1) 0%, rgba(202, 138, 4, 0.1) 100%);
+        border-color: #eab308;
+    }
+    .result-poor {
+        background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(220, 38, 38, 0.1) 100%);
+        border-color: #ef4444;
+    }
+    .result-panel {
+        animation: slideIn 0.5s ease;
+    }
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+
+<script>
+    
+    const inputs = document.querySelectorAll('input[type="number"]');
+    inputs.forEach(input => {
+        input.addEventListener('input', () => {
+            updateRatioStatus(input);
+        });
+    });
+
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', () => {
+            const ratioGroup = checkbox.closest('.ratio-group');
+            if (ratioGroup) {
+                const input = ratioGroup.querySelector('input[type="number"]');
+                if (input) updateRatioStatus(input);
+            }
+        });
+    });
+
+    function updateRatioStatus(input) {
+        const ratioGroup = input.closest('.ratio-group');
+        const statusElement = ratioGroup.querySelector('.ratio-status');
+        const ratioType = ratioGroup.dataset.ratio;
+        const value = parseFloat(input.value);
+        const isNaN = isNaN(value);
+
+        if (isNaN) {
+            statusElement.textContent = 'Pending';
+            statusElement.className = 'ratio-status px-3 py-1 rounded-full text-xs font-semibold uppercase status-pending';
+            return;
+        }
+
+        let status = 'pending';
+        let statusText = 'Pending';
+
+        switch(ratioType) {
+            case 'roe':
+                const roeConsistent = document.getElementById('roe-consistent').checked;
+                if (value >= 20) {
+                    status = roeConsistent ? 'good' : 'warning';
+                    statusText = roeConsistent ? 'Excellent' : 'Good';
+                } else if (value >= 15) {
+                    status = roeConsistent ? 'good' : 'warning';
+                    statusText = roeConsistent ? 'Good' : 'Moderate';
+                } else if (value >= 10) {
+                    status = 'warning';
+                    statusText = 'Moderate';
+                } else {
+                    status = 'bad';
+                    statusText = 'Poor';
+                }
+                break;
+
+            case 'debt-equity':
+                if (value <= 0.3) {
+                    status = 'good';
+                    statusText = 'Excellent';
+                } else if (value <= 0.5) {
+                    status = 'good';
+                    statusText = 'Good';
+                } else if (value <= 0.8) {
+                    status = 'warning';
+                    statusText = 'Moderate';
+                } else {
+                    status = 'bad';
+                    statusText = 'Poor';
+                }
+                break;
+
+            case 'current-ratio':
+                if (value >= 2.0) {
+                    status = 'good';
+                    statusText = 'Excellent';
+                } else if (value >= 1.5) {
+                    status = 'good';
+                    statusText = 'Good';
+                } else if (value >= 1.0) {
+                    status = 'warning';
+                    statusText = 'Moderate';
+                } else {
+                    status = 'bad';
+                    statusText = 'Poor';
+                }
+                break;
+
+            case 'profit-margin':
+                const marginConsistent = document.getElementById('profit-margin-consistent').checked;
+                if (value >= 20) {
+                    status = marginConsistent ? 'good' : 'warning';
+                    statusText = marginConsistent ? 'Excellent' : 'Good';
+                } else if (value >= 10) {
+                    status = marginConsistent ? 'good' : 'warning';
+                    statusText = marginConsistent ? 'Good' : 'Moderate';
+                } else if (value >= 5) {
+                    status = 'warning';
+                    statusText = 'Moderate';
+                } else {
+                    status = 'bad';
+                    statusText = 'Poor';
+                }
+                break;
+
+            case 'pe-ratio':
+                if (value <= 15) {
+                    status = 'good';
+                    statusText = 'Excellent';
+                } else if (value <= 20) {
+                    status = 'good';
+                    statusText = 'Good';
+                } else if (value <= 25) {
+                    status = 'warning';
+                    statusText = 'Moderate';
+                } else {
+                    status = 'bad';
+                    statusText = 'Poor';
+                }
+                break;
+
+            case 'pb-ratio':
+                if (value <= 1.5) {
+                    status = 'good';
+                    statusText = 'Excellent';
+                } else if (value <= 3.0) {
+                    status = 'good';
+                    statusText = 'Good';
+                } else if (value <= 5.0) {
+                    status = 'warning';
+                    statusText = 'Moderate';
+                } else {
+                    status = 'bad';
+                    statusText = 'Poor';
+                }
+                break;
+
+            case 'earnings-growth':
+                const growthConsistent = document.getElementById('earnings-growth-consistent').checked;
+                if (value >= 15) {
+                    status = growthConsistent ? 'good' : 'warning';
+                    statusText = growthConsistent ? 'Excellent' : 'Good';
+                } else if (value >= 10) {
+                    status = growthConsistent ? 'good' : 'warning';
+                    statusText = growthConsistent ? 'Good' : 'Moderate';
+                } else if (value >= 5) {
+                    status = 'warning';
+                    statusText = 'Moderate';
+                } else {
+                    status = 'bad';
+                    statusText = 'Poor';
+                }
+                break;
+
+            case 'free-cash-flow':
+                const fcfGrowing = document.getElementById('free-cash-flow-growing').checked;
+                if (value > 0) {
+                    status = fcfGrowing ? 'good' : 'warning';
+                    statusText = fcfGrowing ? 'Excellent' : 'Good';
+                } else {
+                    status = 'bad';
+                    statusText = 'Poor';
+                }
+                break;
+        }
+
+        statusElement.textContent = statusText;
+        statusElement.className = `ratio-status px-3 py-1 rounded-full text-xs font-semibold uppercase status-${status}`;
+    }
+
+    
+    document.getElementById('ratioForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        calculateRating();
+    });
+
+    function calculateRating() {
+        
+        const tickerName = document.getElementById('ticker-name').value.trim() || 'This Company';
+        
+        
+        const roe = parseFloat(document.getElementById('roe').value) || 0;
+        const roeConsistent = document.getElementById('roe-consistent').checked;
+        const debtEquity = parseFloat(document.getElementById('debt-equity').value) || 999;
+        const currentRatio = parseFloat(document.getElementById('current-ratio').value) || 0;
+        const profitMargin = parseFloat(document.getElementById('profit-margin').value) || 0;
+        const profitMarginConsistent = document.getElementById('profit-margin-consistent').checked;
+        const peRatio = parseFloat(document.getElementById('pe-ratio').value) || 999;
+        const pbRatio = parseFloat(document.getElementById('pb-ratio').value) || 999;
+        const earningsGrowth = parseFloat(document.getElementById('earnings-growth').value) || 0;
+        const earningsGrowthConsistent = document.getElementById('earnings-growth-consistent').checked;
+        const freeCashFlow = parseFloat(document.getElementById('free-cash-flow').value) || 0;
+        const freeCashFlowGrowing = document.getElementById('free-cash-flow-growing').checked;
+
+        
+        let totalScore = 0;
+        let maxScore = 0;
+        const details = [];
+
+        
+        maxScore += 15;
+        if (roe >= 20 && roeConsistent) {
+            totalScore += 15;
+            details.push({label: 'Return on Equity', value: 'Excellent (15/15)', score: 15});
+        } else if (roe >= 15 && roeConsistent) {
+            totalScore += 12;
+            details.push({label: 'Return on Equity', value: 'Good (12/15)', score: 12});
+        } else if (roe >= 15) {
+            totalScore += 10;
+            details.push({label: 'Return on Equity', value: 'Good (10/15)', score: 10});
+        } else if (roe >= 10) {
+            totalScore += 6;
+            details.push({label: 'Return on Equity', value: 'Moderate (6/15)', score: 6});
+        } else if (roe > 0) {
+            totalScore += 3;
+            details.push({label: 'Return on Equity', value: 'Poor (3/15)', score: 3});
+        } else {
+            details.push({label: 'Return on Equity', value: 'Not provided (0/15)', score: 0});
+        }
+
+        
+        maxScore += 15;
+        if (debtEquity <= 0.3) {
+            totalScore += 15;
+            details.push({label: 'Debt-to-Equity Ratio', value: 'Excellent (15/15)', score: 15});
+        } else if (debtEquity <= 0.5) {
+            totalScore += 12;
+            details.push({label: 'Debt-to-Equity Ratio', value: 'Good (12/15)', score: 12});
+        } else if (debtEquity <= 0.8) {
+            totalScore += 6;
+            details.push({label: 'Debt-to-Equity Ratio', value: 'Moderate (6/15)', score: 6});
+        } else if (debtEquity < 999) {
+            totalScore += 2;
+            details.push({label: 'Debt-to-Equity Ratio', value: 'Poor (2/15)', score: 2});
+        } else {
+            details.push({label: 'Debt-to-Equity Ratio', value: 'Not provided (0/15)', score: 0});
+        }
+
+        
+        maxScore += 10;
+        if (currentRatio >= 2.0) {
+            totalScore += 10;
+            details.push({label: 'Current Ratio', value: 'Excellent (10/10)', score: 10});
+        } else if (currentRatio >= 1.5) {
+            totalScore += 8;
+            details.push({label: 'Current Ratio', value: 'Good (8/10)', score: 8});
+        } else if (currentRatio >= 1.0) {
+            totalScore += 5;
+            details.push({label: 'Current Ratio', value: 'Moderate (5/10)', score: 5});
+        } else if (currentRatio > 0) {
+            totalScore += 2;
+            details.push({label: 'Current Ratio', value: 'Poor (2/10)', score: 2});
+        } else {
+            details.push({label: 'Current Ratio', value: 'Not provided (0/10)', score: 0});
+        }
+
+        
+        maxScore += 15;
+        if (profitMargin >= 20 && profitMarginConsistent) {
+            totalScore += 15;
+            details.push({label: 'Net Profit Margin', value: 'Excellent (15/15)', score: 15});
+        } else if (profitMargin >= 10 && profitMarginConsistent) {
+            totalScore += 12;
+            details.push({label: 'Net Profit Margin', value: 'Good (12/15)', score: 12});
+        } else if (profitMargin >= 10) {
+            totalScore += 10;
+            details.push({label: 'Net Profit Margin', value: 'Good (10/15)', score: 10});
+        } else if (profitMargin >= 5) {
+            totalScore += 6;
+            details.push({label: 'Net Profit Margin', value: 'Moderate (6/15)', score: 6});
+        } else if (profitMargin > 0) {
+            totalScore += 3;
+            details.push({label: 'Net Profit Margin', value: 'Poor (3/15)', score: 3});
+        } else {
+            details.push({label: 'Net Profit Margin', value: 'Not provided (0/15)', score: 0});
+        }
+
+        
+        maxScore += 10;
+        if (peRatio <= 15) {
+            totalScore += 10;
+            details.push({label: 'P/E Ratio', value: 'Excellent (10/10)', score: 10});
+        } else if (peRatio <= 20) {
+            totalScore += 8;
+            details.push({label: 'P/E Ratio', value: 'Good (8/10)', score: 8});
+        } else if (peRatio <= 25) {
+            totalScore += 5;
+            details.push({label: 'P/E Ratio', value: 'Moderate (5/10)', score: 5});
+        } else if (peRatio < 999) {
+            totalScore += 2;
+            details.push({label: 'P/E Ratio', value: 'Poor (2/10)', score: 2});
+        } else {
+            details.push({label: 'P/E Ratio', value: 'Not provided (0/10)', score: 0});
+        }
+
+        
+        maxScore += 10;
+        if (pbRatio <= 1.5) {
+            totalScore += 10;
+            details.push({label: 'P/B Ratio', value: 'Excellent (10/10)', score: 10});
+        } else if (pbRatio <= 3.0) {
+            totalScore += 8;
+            details.push({label: 'P/B Ratio', value: 'Good (8/10)', score: 8});
+        } else if (pbRatio <= 5.0) {
+            totalScore += 5;
+            details.push({label: 'P/B Ratio', value: 'Moderate (5/10)', score: 5});
+        } else if (pbRatio < 999) {
+            totalScore += 2;
+            details.push({label: 'P/B Ratio', value: 'Poor (2/10)', score: 2});
+        } else {
+            details.push({label: 'P/B Ratio', value: 'Not provided (0/10)', score: 0});
+        }
+
+        
+        maxScore += 10;
+        if (earningsGrowth >= 15 && earningsGrowthConsistent) {
+            totalScore += 10;
+            details.push({label: 'Earnings Growth', value: 'Excellent (10/10)', score: 10});
+        } else if (earningsGrowth >= 10 && earningsGrowthConsistent) {
+            totalScore += 8;
+            details.push({label: 'Earnings Growth', value: 'Good (8/10)', score: 8});
+        } else if (earningsGrowth >= 10) {
+            totalScore += 6;
+            details.push({label: 'Earnings Growth', value: 'Good (6/10)', score: 6});
+        } else if (earningsGrowth >= 5) {
+            totalScore += 4;
+            details.push({label: 'Earnings Growth', value: 'Moderate (4/10)', score: 4});
+        } else if (earningsGrowth > 0) {
+            totalScore += 2;
+            details.push({label: 'Earnings Growth', value: 'Poor (2/10)', score: 2});
+        } else {
+            details.push({label: 'Earnings Growth', value: 'Not provided (0/10)', score: 0});
+        }
+
+        
+        maxScore += 10;
+        if (freeCashFlow > 0 && freeCashFlowGrowing) {
+            totalScore += 10;
+            details.push({label: 'Free Cash Flow', value: 'Excellent (10/10)', score: 10});
+        } else if (freeCashFlow > 0) {
+            totalScore += 7;
+            details.push({label: 'Free Cash Flow', value: 'Good (7/10)', score: 7});
+        } else if (freeCashFlow === 0) {
+            details.push({label: 'Free Cash Flow', value: 'Not provided (0/10)', score: 0});
+        } else {
+            totalScore += 0;
+            details.push({label: 'Free Cash Flow', value: 'Negative (0/10)', score: 0});
+        }
+
+        
+        const percentage = (totalScore / maxScore) * 100;
+        const roundedPercentage = Math.round(percentage);
+
+        
+        let ratingClass, ratingTitle, ratingDescription, quote;
+        if (roundedPercentage >= 80) {
+            ratingClass = 'result-excellent';
+            ratingTitle = 'Excellent Rating According to Warren Buffett Principles';
+            ratingDescription = 'This business demonstrates strong financial metrics that align well with Warren Buffett\'s investment criteria. The company shows excellent profitability, low debt, good valuation, and strong financial health.';
+            quote = 'Rule No. 1: Never lose money. Rule No. 2: Never forget rule No. 1.';
+        } else if (roundedPercentage >= 65) {
+            ratingClass = 'result-good';
+            ratingTitle = 'Good Rating According to Warren Buffett Principles';
+            ratingDescription = 'This business shows solid financial fundamentals that meet most of Warren Buffett\'s investment criteria. While not perfect, the company demonstrates good profitability, reasonable debt levels, and acceptable valuation.';
+            quote = 'Price is what you pay. Value is what you get.';
+        } else if (roundedPercentage >= 50) {
+            ratingClass = 'result-moderate';
+            ratingTitle = 'Moderate Rating According to Warren Buffett Principles';
+            ratingDescription = 'This business has mixed financial metrics. Some aspects are good, but others may be concerning. The company may still be investable, but requires careful analysis and consideration of industry-specific factors.';
+            quote = 'It\'s far better to buy a wonderful company at a fair price than a fair company at a wonderful price.';
+        } else {
+            ratingClass = 'result-poor';
+            ratingTitle = 'Poor Rating According to Warren Buffett Principles';
+            ratingDescription = 'This business does not meet Warren Buffett\'s investment criteria. The financial metrics suggest potential risks including low profitability, high debt, poor valuation, or weak financial health.';
+            quote = 'Only buy something that you\'d be perfectly happy to hold if the market shut down for 10 years.';
+        }
+
+        
+        const resultPanel = document.getElementById('result-panel');
+        resultPanel.className = `result-panel ${ratingClass} mt-8 p-8 rounded-lg border-2`;
+        resultPanel.classList.remove('hidden');
+        document.getElementById('result-company').textContent = tickerName;
+        document.getElementById('result-score').textContent = `${roundedPercentage}%`;
+        document.getElementById('result-title').textContent = ratingTitle;
+        document.getElementById('result-description').textContent = ratingDescription;
+        document.getElementById('quote-text').textContent = quote;
+
+        
+        const detailsList = document.getElementById('result-details-list');
+        detailsList.innerHTML = details.map(detail => `
+            <div class="flex justify-between items-center py-2 border-b border-gray-800 last:border-b-0">
+                <span class="text-gray-300 font-medium">${detail.label}:</span>
+                <span class="text-gray-200 font-semibold">${detail.value}</span>
+            </div>
+        `).join('');
+
+        
+        resultPanel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    function resetForm() {
+        document.getElementById('ratioForm').reset();
+        document.getElementById('result-panel').classList.add('hidden');
+        document.getElementById('result-company').textContent = '';
+        
+        
+        document.querySelectorAll('.ratio-status').forEach(status => {
+            status.textContent = 'Pending';
+            status.className = 'ratio-status px-3 py-1 rounded-full text-xs font-semibold uppercase status-pending';
+        });
+
+        
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+        </main>
+        
+<footer class="mt-32 text-center">
+    <div class="max-w-3xl mx-auto">
+        <div class="border-t border-gray-800 pt-5">
+            <div class="flex flex-col items-center justify-center gap-2">                
+                <p class="text-gray-500 text-xm ">© 2025 Hafeezul Raziq</p>
+                <p class="text-gray-500 text-xm pb-12">Built using <a href="https://gohugo.io/" target="_blank" class="animated-link text-gray-400 hover:text-gray-200">Hugo</a>. <a href="https://github.com/prxshetty/" target="_blank" class="animated-link text-gray-400 hover:text-gray-200">Theme Credit</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .animated-link {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    .animated-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 1px;
+        bottom: -1px;
+        left: 0;
+        background-color: #ffffff;
+        transition: width 0.3s ease-in-out;
+    }
+    
+    .animated-link:hover::after {
+        width: 100%;
+    }
+</style> 
+    </body>
+</html> 
