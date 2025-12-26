@@ -21,58 +21,88 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Ensure custom styles override Tailwind after it loads
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', applyCustomStyles);
+        } else {
+            applyCustomStyles();
+        }
+        function applyCustomStyles() {
+            setTimeout(() => {
+                const style = document.createElement('style');
+                style.textContent = `
+                    html, body {
+                        background-color: #000000 !important;
+                    }
+                    body {
+                        color: #f3f4f6 !important;
+                        font-family: 'Space Grotesk', sans-serif !important;
+                    }
+                `;
+                document.head.appendChild(style);
+            }, 100);
+        }
+    </script>
     
     <style>
         :root {
             color-scheme: dark;
         }
         
-        html, body {
-            background-color: #000000;
-            color: #f3f4f6;
-            font-family: 'Space Grotesk', sans-serif;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
+        html {
+            background-color: #000000 !important;
+        }
+        body {
+            background-color: #000000 !important;
+            color: #f3f4f6 !important;
+            font-family: 'Space Grotesk', sans-serif !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            min-height: 100vh !important;
+        }
+        body.bg-black,
+        body.min-h-screen {
+            background-color: #000000 !important;
         }
         
         .status-good {
             background: rgba(34, 197, 94, 0.2) !important;
             color: #4ade80 !important;
-            border: 1px solid rgba(34, 197, 94, 0.3);
+            border: 1px solid rgba(34, 197, 94, 0.3) !important;
         }
         .status-warning {
             background: rgba(234, 179, 8, 0.2) !important;
             color: #fbbf24 !important;
-            border: 1px solid rgba(234, 179, 8, 0.3);
+            border: 1px solid rgba(234, 179, 8, 0.3) !important;
         }
         .status-bad {
             background: rgba(239, 68, 68, 0.2) !important;
             color: #f87171 !important;
-            border: 1px solid rgba(239, 68, 68, 0.3);
+            border: 1px solid rgba(239, 68, 68, 0.3) !important;
         }
         .status-pending {
             background: rgba(75, 85, 99, 0.5) !important;
             color: #9ca3af !important;
         }
         .result-excellent {
-            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(22, 163, 74, 0.1) 100%);
-            border-color: #22c55e;
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(22, 163, 74, 0.1) 100%) !important;
+            border-color: #22c55e !important;
         }
         .result-good {
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%);
-            border-color: #3b82f6;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%) !important;
+            border-color: #3b82f6 !important;
         }
         .result-moderate {
-            background: linear-gradient(135deg, rgba(234, 179, 8, 0.1) 0%, rgba(202, 138, 4, 0.1) 100%);
-            border-color: #eab308;
+            background: linear-gradient(135deg, rgba(234, 179, 8, 0.1) 0%, rgba(202, 138, 4, 0.1) 100%) !important;
+            border-color: #eab308 !important;
         }
         .result-poor {
-            background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(220, 38, 38, 0.1) 100%);
-            border-color: #ef4444;
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(220, 38, 38, 0.1) 100%) !important;
+            border-color: #ef4444 !important;
         }
         .result-panel {
-            animation: slideIn 0.5s ease;
+            animation: slideIn 0.5s ease !important;
         }
         @keyframes slideIn {
             from {
