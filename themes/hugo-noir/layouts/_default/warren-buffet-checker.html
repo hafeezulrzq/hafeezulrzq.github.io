@@ -155,12 +155,10 @@
                 </div>
             </div>
 
-            <!-- Content from Markdown -->
-            {{ if .Content }}
-            <div class="prose prose-invert prose-lg max-w-none mb-8">
-                {{ .Content }}
+            <!-- Financial Ratios Poster Image -->
+            <div class="flex justify-center mb-8">
+                <img src="{{ .Site.BaseURL }}images/projects/warren-buffet-page-poster.png" alt="Warren Buffett Financial Ratio Evaluation Framework" class="w-full max-w-4xl rounded-lg shadow-2xl">
             </div>
-            {{ end }}
 
             <!-- Interactive Form -->
             <form id="ratioForm" class="space-y-6">
