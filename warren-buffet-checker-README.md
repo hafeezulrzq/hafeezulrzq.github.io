@@ -1,24 +1,6 @@
 # Warren Buffett Financial Ratio Checker
 
-An interactive tool to evaluate companies based on Warren Buffett's investment criteria.
-
-## 🌐 Web Application
-
-The web version is available at: **https://hafeezulrzq.github.io/warren-buffet-financial-ratio-checker**
-
-### Features:
-- Interactive checklist interface
-- Real-time status indicators as you enter data
-- Comprehensive financial ratio analysis
-- Investment rating with detailed breakdown
-- Beautiful, responsive design matching the Hugo theme
-
-### How to Use:
-1. Navigate to the web page
-2. Enter the company's financial ratios in each section
-3. Check the boxes for consistency indicators where applicable
-4. Click "Calculate Investment Rating"
-5. Review the detailed analysis and rating
+An interactive tool to evaluate companies based on Warren Buffett's investment criteria. Available at: **https://hafeezulrzq.github.io/warren-buffet-financial-ratio-checker**
 
 ## 📊 Financial Ratios Evaluated
 
@@ -60,29 +42,15 @@ The tool evaluates companies based on the following ratios:
 
 ## 🎯 Rating System
 
-- **80-100%**: Excellent Investment Opportunity
-- **65-79%**: Good Investment Opportunity
-- **50-64%**: Moderate Investment Opportunity
-- **Below 50%**: Poor Investment Opportunity
+**Financial Quality Signals:**
+- **80–100%**: Exceptional Financial Fundamentals
+- **65–79%**: Strong Financial Fundamentals
+- **50–64%**: Mixed Financial Signals
+- **Below 50%**: Weak Financial Fundamentals
 
-## 📝 Notes
+## ⚠️ Important Disclaimer
 
-- This tool is based on Warren Buffett's general investment principles
-- Industry-specific factors may affect the interpretation of certain ratios
-- Always conduct thorough due diligence before making investment decisions
-- This tool is for educational purposes and should not be considered as financial advice
-
-## 🔧 Deployment
-
-The web version is automatically deployed to GitHub Pages when you push to the repository. The page is built using Hugo:
-
-- Content file: `content/warren-buffet-financial-ratio-checker.md`
-- Layout template: `themes/hugo-noir/layouts/_default/warren-buffet-checker.html`
-
-To build and deploy:
-1. Run `hugo` to generate the static site
-2. The output will be in the `docs/` directory
-3. Push to GitHub and it will be available at the URL above
+This tool is based on Warren Buffett's general investment principles and is for **educational purposes only**. It should **not be considered as financial advice**. Always conduct thorough due diligence before making investment decisions. Industry-specific factors may affect the interpretation of certain ratios, and market conditions and company-specific circumstances should also be considered. This analysis is a starting point for further research, not a definitive investment recommendation.
 
 ## 📄 License
 
